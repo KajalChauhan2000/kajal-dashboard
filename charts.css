@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+
+*{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  body{
+    margin: 0px;
+    padding: 0px;
+  }
+#largeview{
+    float: left;
+    background-color: rgba(181, 99, 22, 0.61);
+    height: 100vh;
+}
+
+#largeview ul li{
+    list-style-type: none;
+    margin: 30px 10px 30px 10px;
+}
+
+#largeview ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(6, 6, 6);
+    padding: 10px;
+}
+
+#largeview ul li img{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    border: 2px solid black;
+}
+
+/* ================small views======== */
+#smallview{
+    /* float: left; */
+    background-color: black;
+    height: 100vh;
+    display: none;
+    margin-left: -25px;
+    /* display: none; */
+    position: absolute;
+    left: 0px;
+    z-index: -1;
+}
+
+#smallview ul li{
+    list-style-type: none;
+    margin: 30px 10px 30px 10px;
+}
+
+#smallview ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(8, 8, 8);
+    padding: 10px;
+}
+
+#smallview ul li img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+}
+
+#bars{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    color: rgb(9, 9, 9);
+    display: none;
+}
+#closebar{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    color: rgb(8, 8, 8);
+    display: none;
+}
+/* =========media for sidebar======= */
+
+@media(max-width:1041px){
+    #largeview{
+        display: none;
+        
+    }
+    #smallview{
+        display: block;
+    }
+
+    #bars{
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        color: rgb(16, 16, 16);
+        display: block;
+    }
+    #closebar{
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        color: rgb(9, 9, 9);
+        display: none;
+    }
+}
+
+/* ============header================= */
+
+#header{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
+    z-index: -5;
+    color: rgb(8, 7, 7);
+    background-color: rgba(135, 44, 44, 0.413);
+
+}
+
+@media(max-width:376px){
+    
+#header{
+    font-size: 24px;
+    font-weight: bolder;
+    padding: 10px 0px 10px 0px;
+}
+}

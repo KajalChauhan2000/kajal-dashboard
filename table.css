@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+
+*{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  body{
+    margin: 0px;
+    padding: 0px;
+  }
+#largeview{
+    float: left;
+    background-color: rgba(181, 99, 22, 0.61);
+    height: 100vh;
+}
+
+#largeview ul li{
+    list-style-type: none;
+    margin: 30px 10px 30px 10px;
+}
+
+#largeview ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(6, 6, 6);
+    padding: 10px;
+}
+
+#largeview ul li img{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    border: 2px solid black;
+}
+
+/* ================small views======== */
+#smallview{
+    background-color: rgba(189, 145, 15, 0.792);
+    height: 100vh;
+    display: none;
+    margin-left: -25px;
+    position: absolute;
+    left: 0px;
+    z-index: -1;
+}
+
+#smallview ul li{
+    list-style-type: none;
+    margin: 30px 10px 30px 10px;
+}
+
+#smallview ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(8, 8, 8);
+    padding: 10px;
+}
+
+#smallview ul li img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+}
+
+#bars{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    color: rgb(9, 9, 9);
+    display: none;
+}
+#closebar{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    color: rgb(8, 8, 8);
+    display: none;
+}
+/* =========media for sidebar======= */
+
+@media(max-width:1041px){
+    #largeview{
+        display: none;
+        
+    }
+    #smallview{
+        display: block;
+    }
+
+    #bars{
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        color: rgb(16, 16, 16);
+        display: block;
+    }
+    #closebar{
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        color: rgb(9, 9, 9);
+        display: none;
+    }
+}
+
+/* ============header================= */
+
+#header{
+    font-size: 60px;
+    font-weight: bolder;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   background-color: rgba(135, 44, 44, 0.413);
+    position: relative;
+    z-index: -5;
+    color: black;
+
+}
+@media(max-width:376px){
+    
+#header{
+    font-size: 24px;
+    padding: 10px 0px 10px 0px;
+}
+}
+    
+/* ========table============ */
+#header1
+{
+    font-size: 42px;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0px 0px 40px 0px;
+    color: rgb(6, 6, 59);
+}
+#showdata tr td{
+   font-size: 16px;
+   font-weight: bold;
+    height: 20px;
+    width: 250px;
+}
+#maintable table
+{
+    margin-top: 20px;
+}
+
+ @media(max-width:2561px)
+{
+    #showdata 
+    {
+       margin-top: 20px;
+    }
+    #header1
+    {
+        margin-top: 80px;
+    }
+    }
+    @media(max-width:1441px)
+    {
+        #showdata tr td
+        {
+           width: 250px;
+           height: 5px;
+           font-size: 14px;
+           font-weight: bolder;
+        }
+    }
+    @media(max-width:1441px)
+    {
+      #maintable table
+       {
+         margin-top: 10px;
+      }
+    }
+     @media(max-width:1441px){
+    #header1
+  {
+    font-size: 28px;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 20px;
+    color: rgb(6, 6, 59);
+  }
+} 
+ @media(max-width:1025px)
+{
+    #maintable table
+    {
+        margin: 20px 0px 0px 85px;
+    }
+    }
+    @media(max-width:1025px)
+    {
+        #showdata tr td
+        {
+           width: 240px;
+           height: 10px;
+           font-size: 13px;
+           font-weight: bolder;
+        }
+    }
+@media(max-width:1025px){
+    #header
+ {
+     font-size: 38px;
+     padding: 5px 0px 5px 10px;
+  }
+    }
+    @media(max-width:1025px){
+        #header1
+     {
+         font-size: 32px;
+         padding: 0px 0px 0px 80px;
+      }
+        }
+
+@media(max-width:769px)
+{
+#maintable table
+{
+  margin: 20px 0px 0px 85px;
+}
+}
+@media(max-width:769px)
+    {
+        #showdata tr td
+        {
+           font-size: 10px;
+           font-weight: bolder;
+        }
+    }
+
+    @media(max-width:426px)
+    {
+    #maintable table
+    {
+      margin: 10px 0px 0px 85px;
+      width: 50px;
+      height: 100pxz;
+    }
+    }
+    @media(max-width:426px)
+        {
+            #showdata tr td
+            {
+               font-size: 10px;
+               font-weight: bolder;
+            }
+        }
+        @media(max-width:426px){
+            #header
+         {
+             font-size: 36px;
+             padding: 5px 0px 5px 75px;
+             background-color: rgba(181, 99, 22, 0.61);
+          }
+            }
+            @media(max-width:426px){
+                #header1
+             {
+                 font-size: 22px;
+                 padding: 5px 0px 0px 170px;
+              }
+                }
+     
